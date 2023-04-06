@@ -1,5 +1,7 @@
-# ClassicConverter
-Classic Converter is a python script that converts Mifare Classic binary files into [FlipperZero's](https://flipperzero.one/) custom .nfc format. 
+# SkylanderConverter
+Skylander Converter is a python script that converts Skylanders .BIN files to [FlipperZero's](https://flipperzero.one/) custom .nfc format. 
+
+PLEASE NOTE .BIN files are the same as .SKY and .DUMP files. Make sure you rename them to .BIN for this to work.
 
 Worth noting, ClassicConverter also handles all of the below for the file header:
 - UID
