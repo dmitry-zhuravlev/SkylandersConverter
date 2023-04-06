@@ -53,5 +53,7 @@ As of writing this, this will ONLY work with Skylanders Imaginators Figures/Leve
 
 For support, Message froyop12 on discord froyop12#8300
 
+This has only been tested on Nintendo Switch. While it should work on other systems, it's not guaranteed.
+
 
 
