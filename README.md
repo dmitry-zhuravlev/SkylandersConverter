@@ -7,7 +7,7 @@ Worth noting, ClassicConverter also handles all of the below for the file header
 - ATQA
 - Storage Size 
 
-**Works for 4-Byte UIDs and 7-Byte UIDs just make sure youre using the correct script when converting :)**
+**Works for 4-Byte UIDs just make sure youre using the correct script when converting :)**
   
 
 ## Acknowledgements
