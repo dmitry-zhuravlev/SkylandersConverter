@@ -3,7 +3,7 @@ Skylander Converter is a python script that converts Skylanders .BIN files to [F
 
 PLEASE NOTE .BIN files are the same as .SKY and .DUMP files. Make sure you rename them to .BIN for this to work.
 
-Worth noting, ClassicConverter also handles all of the below for the file header:
+Worth noting, SkylanderConverter also handles all of the below for the file header:
 - UID
 - SAK
 - ATQA
@@ -19,7 +19,7 @@ Worth noting, ClassicConverter also handles all of the below for the file header
  [Lucaslhm's Amiibo converter script for MFUL](https://github.com/Lucaslhm/AmiiboFlipperConverter) for code inspo
 
 ## Download and Usage
-### **Requires Python**
+### **Requires Python 3**
 
 1. Download code Either through `git clone` or by simply pressing the green [Code] Button at the top and downloading the zip. 
 2. Place your (.bin) Binary files in the "assets" folder or create your own folder(s) and place the files in there. 
@@ -45,7 +45,8 @@ after running you should be met with "Completed Conversion" and a new file appea
 
 
 ## Support
-If the SAK in your converted file is wrong it's due to an anti-cloning tactic. read about it here and how to fix it [link](https://gist.github.com/equipter/3022aea4e371e585ff6e46de637e7769)
+
+As of writing this, this will ONLY work with Skylanders Imaginators Figures. I don't have figures from the other game yet. When I get them, I'll make changes to the script here :)
 
 For support, Message Equip on discord Equip#1515 or join The discord server [Link](https://discord.gg/e9XzfG5nV5)
 
