@@ -1,3 +1,7 @@
+# Disclaimer
+
+SkylanderConverter is based off of equipters work. I encourage you to check out his github that I forked this from.
+
 # SkylanderConverter
 Skylander Converter is a python script that converts Skylanders .BIN files to [FlipperZero's](https://flipperzero.one/) custom .nfc format. 
 
@@ -45,7 +49,9 @@ after running you should be met with "Completed Conversion" and a new file appea
 
 ## Support
 
-As of writing this, this will ONLY work with Skylanders Imaginators Figures. I don't have figures from the other game yet. When I get them, I'll make changes to the script here :)
+As of writing this, this will ONLY work with Skylanders Imaginators Figures/Level Packs. I don't have figures from the other game yet. When I get them, I'll make changes to the script here :)
 
-For support, Message Equip on discord Equip#1515 or join The discord server [Link](https://discord.gg/e9XzfG5nV5)
+For support, Message froyop12 on discord froyop12#8300
+
+
 
