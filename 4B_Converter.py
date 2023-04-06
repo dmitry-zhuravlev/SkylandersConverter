@@ -64,13 +64,13 @@ def assemble_code(contents: {hex}) -> str:
     conversion, Block_count, Mf_size = convert(contents)
 
     return f"""Filetype: Flipper NFC device
-Version: 2
+Version: 3
 # Nfc device type can be UID, Mifare Ultralight, Mifare Classic, Bank card
 Device type: Mifare Classic
 # UID, ATQA and SAK are common for all formats
 UID: {get_uid(contents)}
-ATQA: {get_atqa(contents)}
-SAK: {get_sak(contents)}
+ATQA: 0F 01
+SAK: 88
 # Mifare Classic specific data
 Mifare Classic type: {Mf_size}K
 Data format version: 2
