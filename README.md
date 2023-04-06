@@ -23,15 +23,15 @@ Worth noting, SkylanderConverter also handles all of the below for the file head
 
 1. Download code Either through `git clone` or by simply pressing the green [Code] Button at the top and downloading the zip. 
 2. Place your (.bin) Binary files in the "assets" folder or create your own folder(s) and place the files in there. 
-3. pick the right converter for you, 4B_Converter is for 4-byte UID classics. 4B is the correct script for Skylanders.
-The Parameters for ClassicConverter are as such 
+3. 4B is the correct script for Skylanders.
+The Parameters for SkylanderConverter are as such 
 
 `-i / --input-path` - mandatory file input location, link to file in directory or whole directory to be converted. 
 
 `-o / --output-path` - optional file output location, if no output path is specified, the generated nfc file will be created in the same directory as the input binary file. 
 
 ### Example
-in this example ill be using the 4B uid credential converter. use whats right for your card though. 
+This is an example of what to type in the terminal
 
 `python3 4B_Converter.py -i assets/example.bin`
 after running you should be met with "Completed Conversion" and a new file appearing in your assets folder with the same name as your binary file but with a .nfc extension and file format. 
