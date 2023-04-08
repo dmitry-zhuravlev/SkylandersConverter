@@ -51,11 +51,9 @@ after running you should be met with "Completed Conversion" and a new file appea
 
 ## Support
 
-As of writing this, this will ONLY work with Skylanders Imaginators Figures/Level Packs. I don't have figures from the other game yet. When I get them, I'll make changes to the script here :)
-
 For support, Message froyop12 on discord froyop12#8300
 
-This has only been tested on Nintendo Switch. While it should work on other systems, it's not guaranteed.
+This has only been tested on Nintendo Switch. I suspect it might not work with other sytems. I am currently looking into this.
 
 
 
