@@ -27,7 +27,9 @@ Worth noting, SkylanderConverter also handles all of the below for the file head
 
 1. Download code Either through `git clone` or by simply pressing the green [Code] Button at the top and downloading the zip. 
 2. Place your (.bin) Binary files in the "assets" folder or create your own folder(s) and place the files in there. 
-3. 4B is the correct script for Skylanders.
+3. Imaginators.py is the correct script for Skylanders Imaginators figures.
+4. Regulars.py is the correct script for all other Skylanders figures.
+
 The Parameters for SkylanderConverter are as such 
 
 `-i / --input-path` - mandatory file input location, link to file in directory or whole directory to be converted. 
