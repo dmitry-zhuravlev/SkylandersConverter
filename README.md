@@ -27,7 +27,9 @@ Worth noting, SkylanderConverter also handles all of the below for the file head
 
 1. Download code Either through `git clone` or by simply pressing the green [Code] Button at the top and downloading the zip. 
 2. Place your (.bin) Binary files in the "assets" folder or create your own folder(s) and place the files in there. 
-3. 4B is the correct script for Skylanders.
+3. Imaginators.py is the correct script for Skylanders Imaginators figures.
+4. Regulars.py is the correct script for all other Skylanders figures.
+
 The Parameters for SkylanderConverter are as such 
 
 `-i / --input-path` - mandatory file input location, link to file in directory or whole directory to be converted. 
@@ -49,11 +51,9 @@ after running you should be met with "Completed Conversion" and a new file appea
 
 ## Support
 
-As of writing this, this will ONLY work with Skylanders Imaginators Figures/Level Packs. I don't have figures from the other game yet. When I get them, I'll make changes to the script here :)
-
 For support, Message froyop12 on discord froyop12#8300
 
-This has only been tested on Nintendo Switch. While it should work on other systems, it's not guaranteed.
+This has only been tested on Nintendo Switch. I suspect it might not work with other sytems. I am currently looking into this.
 
 
 
