@@ -55,5 +55,7 @@ For support, Message froyop12 on discord froyop12#8300
 
 This has only been tested on Nintendo Switch. I suspect it might not work with other sytems. I am currently looking into this.
 
+UPDATE: Only works with Nintendo Switch. The flipper cannot be written to yet. If it ever gets updated. I will update this repo.
+
 
 
