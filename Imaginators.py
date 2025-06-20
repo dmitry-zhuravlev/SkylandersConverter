@@ -81,11 +81,11 @@ Data format version: 2
 
 def convert_file(input_path: str, output_path: str):
     input_extension = os.path.splitext(input_path)[1]
-    if input_extension == ".bin":
+    if input_extension == ".dump":
         with open(input_path, "rb") as file:
             contents = file.read()
             name = os.path.split(input_path)[1]
-            write_output(name.split(".bin")[0], assemble_code(contents), output_path)
+            write_output(name.split(".dump")[0], assemble_code(contents), output_path)
 
 
 
@@ -116,7 +116,7 @@ def get_args():
         "--output-path",
         required=False,
         type=pathlib.Path,
-        help="Output path, if not specified, the output .nfc file will be created in the same directory the .bin file exists within.",
+        help="Output path, if not specified, the output .nfc file will be created in the same directory the .dump file exists within.",
     )
 
     args = parser.parse_args()
