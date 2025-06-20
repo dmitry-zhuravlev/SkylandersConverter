@@ -47,6 +47,11 @@ after running you should be met with "Completed Conversion" and a new file appea
 ![image](https://user-images.githubusercontent.com/72751518/182514195-c766ca6a-234f-43e9-a779-fce67894f5e6.png)
 
 
+### Example2 (Multi-File Conversion preserving dumps directory structure)
+This is an example of what to type in the terminal
+
+`python3 Imaginators.py -i assets/Dumps -o assets/Skylanders`
+after running you should be met with "Completed Conversion" and new files appearing in your assets/Skylanders directory with the same name as your binary file but with a .nfc extension and file format.
 
 
 ## Support
