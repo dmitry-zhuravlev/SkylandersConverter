@@ -79,27 +79,44 @@ Data format version: 2
 """
 
 
-def convert_file(input_path: str, output_path: str):
+def convert_file(input_path: str, output_path: str, base_input_path: str = None):
     input_extension = os.path.splitext(input_path)[1]
-    if input_extension == ".bin":
+    if input_extension == ".dump":
         with open(input_path, "rb") as file:
             contents = file.read()
+
+            # Get the relative path from base_input_path to maintain directory structure
+            if base_input_path:
+                rel_path = os.path.relpath(os.path.dirname(input_path), base_input_path)
+                # If rel_path is '.', we're in the base directory
+                if rel_path == '.':
+                    target_dir = output_path
+                else:
+                    target_dir = os.path.join(output_path, rel_path)
+                    os.makedirs(target_dir, exist_ok=True)
+            else:
+                target_dir = output_path
+
             name = os.path.split(input_path)[1]
-            write_output(name.split(".bin")[0], assemble_code(contents), output_path)
+            write_output(name.split(".dump")[0], assemble_code(contents), target_dir)
 
 
 
-def process(path: str, output_path: str):
+def process(path: str, output_path: str, base_input_path: str = None):
+    # If base_input_path is not set, this is the first call, so set it to path
+    if base_input_path is None:
+        base_input_path = path if not os.path.isfile(path) else os.path.dirname(path)
+
     if os.path.isfile(path):
-        convert_file(path, output_path)
+        convert_file(path, output_path, base_input_path)
     else:
         for filename in os.listdir(path):
             new_path = os.path.join(path, filename)
 
-            if os.path.isfile(path):
-                convert_file(path, output_path)
+            if os.path.isfile(new_path):
+                convert_file(new_path, output_path, base_input_path)
             else:
-                process(new_path, output_path)
+                process(new_path, output_path, base_input_path)
 
 
 def get_args():
@@ -116,7 +133,7 @@ def get_args():
         "--output-path",
         required=False,
         type=pathlib.Path,
-        help="Output path, if not specified, the output .nfc file will be created in the same directory the .bin file exists within.",
+        help="Output path, if not specified, the output .nfc file will be created in the same directory the .dump file exists within.",
     )
 
     args = parser.parse_args()

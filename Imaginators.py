@@ -84,7 +84,7 @@ def convert_file(input_path: str, output_path: str, base_input_path: str = None)
     if input_extension == ".dump":
         with open(input_path, "rb") as file:
             contents = file.read()
-            
+
             # Get the relative path from base_input_path to maintain directory structure
             if base_input_path:
                 rel_path = os.path.relpath(os.path.dirname(input_path), base_input_path)
@@ -96,7 +96,7 @@ def convert_file(input_path: str, output_path: str, base_input_path: str = None)
                     os.makedirs(target_dir, exist_ok=True)
             else:
                 target_dir = output_path
-                
+
             name = os.path.split(input_path)[1]
             write_output(name.split(".dump")[0], assemble_code(contents), target_dir)
 
@@ -106,7 +106,7 @@ def process(path: str, output_path: str, base_input_path: str = None):
     # If base_input_path is not set, this is the first call, so set it to path
     if base_input_path is None:
         base_input_path = path if not os.path.isfile(path) else os.path.dirname(path)
-    
+
     if os.path.isfile(path):
         convert_file(path, output_path, base_input_path)
     else:
