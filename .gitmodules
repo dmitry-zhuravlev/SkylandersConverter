@@ -1,0 +1,3 @@
+[submodule "assets/Dumps"]
+	path = assets/Dumps
+	url = https://github.com/skylandersNFC/Skylanders-Ultimate-NFC-Pack.git
